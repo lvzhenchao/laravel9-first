@@ -12,6 +12,7 @@ use Illuminate\Support\Facades\Route;
 | be assigned to the "web" middleware group. Make something great!
 |
 */
+use App\Http\Controllers\SiteController;
 
 Route::get('/', function () {
 //    return "hello world";
@@ -21,4 +22,7 @@ Route::get("/about", function (){
     return view('sites/about');
 });
 
-Route::get('/site', [\App\Http\Controllers\SiteController::class,'index']);
+Route::get('/site', [SiteController::class,'index']);
+Route::get('/contact', [SiteController::class,'contact']);
+
+

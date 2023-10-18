@@ -7,4 +7,11 @@
 # 2、基本工作流程
 ## route(路由)--controller(控制器)--view(视图)
 ### 生成控制器：php artisan make:controller SiteController 
+### 向视图传递变量：
+#### 数组: return view("sites", ['name'=>$name])
+#### with: return view("sites.about")->with(['name'=>$name]) 
+#### compact: return view("sites", compact('',''))
+
+# 3、模版blade引擎
+
 
