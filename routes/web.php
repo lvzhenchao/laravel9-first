@@ -13,6 +13,7 @@ use Illuminate\Support\Facades\Route;
 |
 */
 use App\Http\Controllers\SiteController;
+use App\Http\Controllers\ArticlesController;
 
 Route::get('/', function () {
 //    return "hello world";
@@ -24,5 +25,10 @@ Route::get("/about", function (){
 
 Route::get('/site', [SiteController::class,'index']);
 Route::get('/contact', [SiteController::class,'contact']);
+
+Route::get('/articles', [ArticlesController::class,'index']);
+Route::get('/articles/{id}', [ArticlesController::class,'show']);
+
+
 
 

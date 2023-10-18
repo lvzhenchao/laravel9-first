@@ -24,4 +24,8 @@
 ### 新增字段场景：php artisan make:migration add_intro_column_to_article --table=article
 #### 肯定不能rollback，会影响线上环境
 
+# 6、Eloquent入门，通过orm轻松进行curd
+## 创建模型：php artisan make:model Article
+## 命令行交互界面： php artisan tinker
+
 
