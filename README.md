@@ -27,5 +27,6 @@
 # 6、Eloquent入门，通过orm轻松进行curd
 ## 创建模型：php artisan make:model Article
 ## 命令行交互界面： php artisan tinker
+## 时间插件：carbon; carbon->diffForHumans 与当前的时间差
 
 
