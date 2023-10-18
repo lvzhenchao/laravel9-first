@@ -12,7 +12,13 @@
 #### with: return view("sites.about")->with(['name'=>$name]) 
 #### compact: return view("sites", compact('',''))
 
-# 3、模版blade引擎
+# 3、模版blade引擎：site/index
 
 # 4、环境配置：.env文件里面
+
+# 5、migration基础
+## 数据库版本控制：
+### 创建数据库表: php artisan migrate
+### 回滚表: php artisan migrate:rollback
+### 创建表: php artisan make:migration create_article_table --create=article
 
