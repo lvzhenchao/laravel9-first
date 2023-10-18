@@ -29,4 +29,8 @@
 ## 命令行交互界面： php artisan tinker
 ## 时间插件：carbon; carbon->diffForHumans 与当前的时间差
 
+# 7、表单验证: php artisan make:request CreateArticleRequest
+## request
+## validate
+
 
