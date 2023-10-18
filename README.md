@@ -21,4 +21,7 @@
 ### 创建数据库表: php artisan migrate
 ### 回滚表: php artisan migrate:rollback
 ### 创建表: php artisan make:migration create_article_table --create=article
+### 新增字段场景：php artisan make:migration add_intro_column_to_article --table=article
+#### 肯定不能rollback，会影响线上环境
+
 
