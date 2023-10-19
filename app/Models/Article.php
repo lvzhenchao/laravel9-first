@@ -11,13 +11,17 @@ class Article extends Model
     use HasFactory;
     protected $table = 'article';
 
+    protected $casts = [
+        'publish_at'  => 'date',
+    ];
+
     //setTitleAttribute
-    public function setPublishedAtAttribute($date){
-        $this->attributes['published_at'] = Carbon::createFromFormat('Y-m-d', $date);
+    public function setPublishAtAttribute($date){
+        $this->attributes['publish_at'] = Carbon::createFromFormat('Y-m-d', $date);
     }
 
     //scope
     public function scopePublished($query){
-        $this->where('published_at', '<=', Carbon::now());
+        $this->where('publish_at', '<=', Carbon::now());
     }
 }
